@@ -62,7 +62,3 @@ button:hover {
   color: var(--text-hover);
   cursor: pointer;
 }
-
-.vertical-spacer {
-  height: 100%;
-}

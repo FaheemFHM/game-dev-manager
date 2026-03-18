@@ -6,6 +6,6 @@ npm run dev
 
 
 
-C:\Users\fahee\Desktop\Creations\Portfolio\game-dev-manager
+cd C:\Users\fahee\Desktop\Creations\Portfolio\game-dev-manager
 json-server --watch db.json --port 5000
 

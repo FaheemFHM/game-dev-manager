@@ -1,0 +1,31 @@
+
+.navbar {
+  height: 100vh;
+  width: 200px;
+
+  background-color: var(--surface);
+  border-right: 3px solid var(--border);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-button {
+  min-height: 4rem;
+  width: 100%;
+
+  padding-left: 1rem;
+
+  display: flex;
+  align-items: center;
+}
+
+.navbar-button i {
+  font-size: 1.5rem;
+}
+
+.navbar-button span {
+  margin-left: 1rem;
+  padding-bottom: 1px;
+  font-size: 1rem;
+}
