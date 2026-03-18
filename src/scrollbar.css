@@ -1,0 +1,22 @@
+
+/* Scrollbar width */
+.projects-page::-webkit-scrollbar {
+  width: 1rem;
+}
+
+/* Track (background) */
+.projects-page::-webkit-scrollbar-track {
+  background: var(--surface);
+  border-radius: 0;
+}
+
+/* Thumb (the draggable part) */
+.projects-page::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 0;
+}
+
+/* Hover effect */
+.projects-page::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}

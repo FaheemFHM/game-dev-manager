@@ -1,0 +1,120 @@
+
+/* App.css handles the styling of the App.jsx file */
+
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+/* ============================= NAVBAR */
+
+.navbar {
+  height: 100vh;
+  width: 200px;
+
+  background-color: var(--surface);
+  border-right: 3px solid var(--border);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-button {
+  min-height: 4rem;
+  width: 100%;
+
+  padding-left: 1rem;
+
+  display: flex;
+  align-items: center;
+}
+
+.navbar-button i {
+  font-size: 1.5rem;
+}
+
+.navbar-button span {
+  margin-left: 1rem;
+  padding-bottom: 1px;
+  font-size: 1rem;
+}
+
+/* ============================= PROJECTS */
+
+.projects-page {
+  max-height: 100vh;
+  width: 100%;
+  overflow-y: auto;
+  
+  display: grid;
+  align-content: start;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.projects-card {
+  width: 100%;
+
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+}
+
+.projects-card:hover {
+  background-color: var(--border);
+  border: 1px solid var(--surface);
+  cursor: pointer;
+}
+
+.projects-card-img-container {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border: 1px solid var(--border);
+}
+
+.projects-card:hover .projects-card-img-container {
+  border: 1px solid var(--surface);
+}
+
+.projects-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.projects-card h3 {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.projects-card:hover h3 {
+  border-bottom: 1px solid var(--surface);
+}
+
+.projects-card p {
+  margin-top: 0;
+  color: var(--text-muted);
+
+  display: -webkit-box;       /* create a flexible box */
+  -webkit-line-clamp: 3;      /* limit to 3 lines */
+  -webkit-box-orient: vertical; /* vertical orientation */
+  line-clamp: 3;      /* limit to 3 lines */
+  overflow: hidden;           /* hide the rest */
+  text-overflow: ellipsis;    /* show "..." at the end */
+}
+
+.projects-card span {
+  border-top: 1px solid var(--border);
+  padding-top: 0.75rem;
+  color: var(--text-muted);
+}
+
+.projects-card:hover span {
+  border-top: 1px solid var(--surface);
+}
