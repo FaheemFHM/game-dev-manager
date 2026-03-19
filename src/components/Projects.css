@@ -2,7 +2,7 @@
 .projects-page {
   max-height: 100vh;
   width: 100%;
-  overflow-y: auto;
+  overflow-y: scroll;
   
   display: grid;
   align-content: start;
@@ -10,6 +10,21 @@
 
   padding: 1rem;
   gap: 1rem;
+}
+
+.add-project-button {
+  position: fixed;
+  bottom: 1rem;
+  right: 2rem;
+
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  
+  background-color: var(--bg);
+  color: var(--primary);
 }
 
 .projects-card {
